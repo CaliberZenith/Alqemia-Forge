@@ -1,4 +1,4 @@
-package com.example.examplemod;
+package com.caliberzenith.examplemod;
 
 import org.slf4j.Logger;
 
