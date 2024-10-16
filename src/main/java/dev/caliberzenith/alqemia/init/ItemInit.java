@@ -1,4 +1,4 @@
-package com.caliberzenith.alqemia.init;
+package dev.caliberzenith.alqemia.init;
 
 import com.caliberzenith.alqemia.Alqemia;
 import net.minecraft.world.food.FoodProperties;
@@ -7,7 +7,7 @@ import net.minecraft.world.item.Item;
 import net.neoforged.neoforge.registries.DeferredItem;
 import net.neoforged.neoforge.registries.DeferredRegister;
 
-public class ItemForge {
+public class ItemInit {
     // Deferred Register
     public static final DeferredRegister.Items ITEMS = DeferredRegister.createItems(Alqemia.MODID);
 
@@ -16,6 +16,6 @@ public class ItemForge {
             .alwaysEdible().nutrition(1).saturationModifier(2f).build()));
 
     // Block Item
-    public static final DeferredItem<BlockItem> EXAMPLE_BLOCK_ITEM = ITEMS.registerSimpleBlockItem("example_block", BlockForge.EXAMPLE_BLOCK);
+    public static final DeferredItem<BlockItem> EXAMPLE_BLOCK_ITEM = ITEMS.registerSimpleBlockItem("example_block", BlockInit.EXAMPLE_BLOCK);
 
 }
